@@ -1,0 +1,10 @@
+[
+  {"question":"ภาษาไทยไม่มีช่องว่างทุกคำควรแบ่งข้อความอย่างไร", "relevant_sources":["chunking.md"]},
+  {"question":"overlap ของ chunk ในรุ่นปรับปรุงเท่าไร", "relevant_sources":["chunking.md"]},
+  {"question":"ทั้งสองระบบใช้โมเดลอะไรสร้าง dense embedding", "relevant_sources":["embedding.md"]},
+  {"question":"บริบทจากเอกสารเต็มช่วยเวกเตอร์อย่างไร", "relevant_sources":["embedding.md"]},
+  {"question":"RRF รวมผล BM25 กับ vector ด้วยสูตรอะไร", "relevant_sources":["search.md"]},
+  {"question":"การค้นหาจากคำภาษาไทยควรเลือก analyzer แบบใด", "relevant_sources":["search.md"]},
+  {"question":"cross-encoder รับข้อมูลแบบใดและทำไมใช้เฉพาะ candidate", "relevant_sources":["reranking.md"]},
+  {"question":"การจัดอันดับใหม่เพิ่มต้นทุนอะไรบ้าง", "relevant_sources":["reranking.md"]}
+]
