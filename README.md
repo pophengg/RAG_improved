@@ -1,16 +1,3 @@
-# Authentic RAG: ต้นฉบับและรุ่นปรับปรุง
-
-โครงการสำหรับโจทย์ข้อ (1)–(4) โดยพัฒนาจาก [2025-authenticRAG ของ aekanun2020](https://github.com/aekanun2020/2025-authenticRAG) ไม่เปลี่ยน LLM สำหรับคำตอบสุดท้าย: **qwen/qwen-2.5-72b-instruct** ผ่าน OpenRouter ทั้งสองรุ่นใช้ prompt, temperature 0.6 และ max_tokens 1000 เดียวกันใน `generate_response` ที่สืบทอดจากต้นฉบับ
-
-## ไฟล์ตามโจทย์
-
-- (1) `upstream/` เก็บสามไฟล์จากลิงก์เดิมโดยไม่แก้ไข และ `baseline.py` เป็นรุ่นที่แก้ compatibility เพื่อเรียกใช้งานผ่าน `run.py`
-- (2) `improved.py` และ `retrieval.py` พัฒนากระบวนการ retrieval โดยสืบทอดตัวสร้างคำตอบจาก baseline
-- (3) [COMPARISON.md](COMPARISON.md) อธิบายความแตกต่าง เหตุผล ข้อแลกเปลี่ยน และวิธีตรวจคุณภาพ
-- (4) โฟลเดอร์นี้พร้อมนำขึ้น GitHub มี `.gitignore` กัน API key และ cache พร้อมชุดข้อมูลตัวอย่างและการทดสอบ
-
-## ติดตั้งและรัน (PowerShell, Python 3.10+)
-
 ต้องมี Docker Desktop, Python และ OpenRouter API key โมเดล embedding/reranker ดาวน์โหลดจาก Hugging Face ในการรันครั้งแรกและใช้หน่วยความจำหลาย GB ไม่ต้องติดตั้ง Ollama เพราะโค้ดเรียก SentenceTransformer โดยตรง
 
 ```powershell
